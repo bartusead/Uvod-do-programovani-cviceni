@@ -16,5 +16,9 @@ else:
     print("Správně")
     exit()
     
-
+# git init - vytvoří repozitář
+# git status - zobrazí stav repozitáře
+# git add - přidá soubory do věcí ke commitu
+# git commit - potvrdí změny
+# git log - zobrazí historii
 
