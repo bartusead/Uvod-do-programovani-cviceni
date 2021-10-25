@@ -1,1 +1,1 @@
-# -vod-do-programov-n---cvi-en-
+# Uvod-do-programovani-cviceni
