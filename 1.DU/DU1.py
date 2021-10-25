@@ -1,39 +1,139 @@
 from turtle import forward, left, right, penup, pendown, setpos, speed, exitonclick, circle
-a = 100
+from math import sqrt
+z = 100
 speed(0)
 for _ in range(2):
     for _ in range(3):
         for _ in range(4):
-            forward(a)
+            forward(z)
             left(90)
-        forward(a)
+        forward(z)
     left(180)
     penup()
-    forward(3*a)
+    forward(3*z)
     left(90)
-    forward(a)
+    forward(z)
     left(90)
     pendown()
 
 for _ in range(3):
         for _ in range(4):
-            forward(a)
+            forward(z)
             left(90)
-        forward(a)
+        forward(z)
 penup()
 
-x = int(input("Zadej souřadnici x:"))
-y = int(input("Zadej souřadnici y:"))
+##############################################################################################################
 
-setpos(x,y)
+for _ in range(4):
+
+    print("Hraje hráč 1")
+
+    kód1 = input("Zadej kód čtverce:")
+
+    while kód1 != "a" and kód1 != "b" and kód1 != "c" and kód1 != "d" and kód1 != "e" and kód1 != "f" and kód1 != "g" and kód1 != "h" and kód1 != "i":
+        print("Musíš zadat platný kód čtverce, tedy a, b, c, d, e, f, g, h, nebo i")
+        kód1 = input("Zadej kód čtverce:")
+
+    if kód1 == "a":
+        setpos(50,0)
+    elif kód1 == "b":
+        setpos(150,0)
+    elif kód1 == "c":
+        setpos(250,0)
+    elif kód1 == "d":
+        setpos(50,-100)
+    elif kód1 == "e":
+        setpos(150,-100)
+    elif kód1 == "f":
+        setpos(250,-100)
+    elif kód1 == "g":
+        setpos(50,-200)
+    elif kód1 == "h":
+        setpos(150,-200)
+    elif kód1 == "i":
+        setpos(250,-200)
+
+
+
+    pendown()
+    circle(50)
+    penup()
+
+    print("Hraje hráč 2")
+
+    kód2 = input("Zadej kód čtverce:")
+
+    while kód2 != "a" and kód2 != "b" and kód2 != "c" and kód2 != "d" and kód2 != "e" and kód2 != "f" and kód2 != "g" and kód2 != "h" and kód2 != "i":
+        print("Musíš zadat platný kód čtverce, tedy a, b, c, d, e, f, g, h, nebo i")
+        kód2 = input("Zadej kód čtverce:")
+
+    if kód2 == "a":
+        setpos(50,0)
+    elif kód2 == "b":
+        setpos(150,0)
+    elif kód2 == "c":
+        setpos(250,0)
+    elif kód2 == "d":
+        setpos(50,-100)
+    elif kód2 == "e":
+        setpos(150,-100)
+    elif kód2 == "f":
+        setpos(250,-100)
+    elif kód2 == "g":
+        setpos(50,-200)
+    elif kód2 == "h":
+        setpos(150,-200)
+    elif kód2 == "i":
+        setpos(250,-200)
+
+
+    pendown()
+    forward(z/2)
+    left(135)
+    forward(sqrt(2*(z**2)))
+    left(135)
+    forward(z)
+    left(135)
+    forward(sqrt(2*(z**2)))
+    right(45)
+    penup()
+
+print("Hraje hráč 1")
+
+kód1 = input("Zadej kód čtverce:")
+
+while kód1 != "a" and kód1 != "b" and kód1 != "c" and kód1 != "d" and kód1 != "e" and kód1 != "f" and kód1 != "g" and kód1 != "h" and kód1 != "i":
+    print("Musíš zadat platný kód čtverce, tedy a, b, c, d, e, f, g, h, nebo i")
+    kód1 = input("Zadej kód čtverce:")
+
+if kód1 == "a":
+    setpos(50,0)
+elif kód1 == "b":
+    setpos(150,0)
+elif kód1 == "c":
+    setpos(250,0)
+elif kód1 == "d":
+    setpos(50,-100)
+elif kód1 == "e":
+    setpos(150,-100)
+elif kód1 == "f":
+    setpos(250,-100)
+elif kód1 == "g":
+    setpos(50,-200)
+elif kód1 == "h":
+    setpos(150,-200)
+elif kód1 == "i":
+    setpos(250,-200)
+
+
+
 pendown()
 circle(50)
+penup()
 
 
 
-
-
-exitonclick()
 
 
 
