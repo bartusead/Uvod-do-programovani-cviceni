@@ -14,6 +14,7 @@ else:
 # git init - vytvoří v dané složce repozitář
 # git status - zobrazí stav repoz.
 # git add - přidá soubor do věcí ke commitu
-# git commit - potvrdí změny
+# git commit - potvrdí změnu
+
 
 
