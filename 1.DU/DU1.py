@@ -30,7 +30,7 @@ title("Piškvorky")
 
 print("Vítejte u piškvorek!")
 print("Hráči postupně vybírají pole a - i podle následujícího vzoru:")
-print("a   b   c\nd   e   f\ng   h   i")
+print("a | b | c\n---------\nd | e | f\n---------\ng | h | i")
 
 
 
