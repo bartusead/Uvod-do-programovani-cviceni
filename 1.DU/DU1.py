@@ -1,5 +1,6 @@
-from turtle import forward, left, right, penup, pendown, setpos, speed, exitonclick, circle
-from math import sqrt
+from turtle import forward, left, right, penup, pendown, setpos, speed, exitonclick, circle, title
+from math import e, sqrt
+
 z = 100
 speed(0)
 for _ in range(2):
@@ -23,7 +24,16 @@ for _ in range(3):
         forward(z)
 penup()
 
+title("Piškvorky")
+
 ##############################################################################################################
+
+print("Vítejte u piškvorek!")
+print("Hráči postupně vybírají pole a - i podle následujícího vzoru:")
+print("a   b   c\nd   e   f\ng   h   i")
+
+
+
 
 for _ in range(4):
 
@@ -132,7 +142,7 @@ pendown()
 circle(50)
 penup()
 
-
+print("Konec hry!")
 
 
 
