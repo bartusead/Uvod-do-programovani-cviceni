@@ -3,7 +3,7 @@ from math import sqrt
 
 z = 100
 speed(0)
-for _ in range(2):
+for _ in range(3):
     for _ in range(3):
         for _ in range(4):
             forward(z)
@@ -17,44 +17,39 @@ for _ in range(2):
     left(90)
     pendown()
 
-for _ in range(3):
-        for _ in range(4):
-            forward(z)
-            left(90)
-        forward(z)
 penup()                 # Nakreslí mřížku
 ##############################################################################################################
 print("Vítejte u piškvorek!")
 print("Hráči postupně vybírají pole a - i podle následujícího vzoru:")
 print("a | b | c\n---------\nd | e | f\n---------\ng | h | i")
 
-for _ in range(4):
+for i in range(4):
 
     print("Hraje hráč 1")
 
-    kód1 = input("Zadej kód čtverce:")
+    kod1 = input("Zadej kód čtverce:")
 
-    while kód1 != "a" and kód1 != "b" and kód1 != "c" and kód1 != "d" and kód1 != "e" and kód1 != "f" and kód1 != "g" and kód1 != "h" and kód1 != "i":
+    while kod1 != "a" and kod1 != "b" and kod1 != "c" and kod1 != "d" and kod1 != "e" and kod1 != "f" and kod1 != "g" and kod1 != "h" and kod1 != "i":
         print("Musíš zadat platný kód čtverce, tedy a, b, c, d, e, f, g, h, nebo i")
-        kód1 = input("Zadej kód čtverce:")  # Vylučuje nesprávný vstup od hráče 1
+        kod1 = input("Zadej kód čtverce:")  # Vylučuje nesprávný vstup od hráče 1
 
-    if kód1 == "a":
+    if kod1 == "a":
         setpos(50,0)
-    elif kód1 == "b":
+    elif kod1 == "b":
         setpos(150,0)
-    elif kód1 == "c":
+    elif kod1 == "c":
         setpos(250,0)
-    elif kód1 == "d":
+    elif kod1 == "d":
         setpos(50,-100)
-    elif kód1 == "e":
+    elif kod1 == "e":
         setpos(150,-100)
-    elif kód1 == "f":
+    elif kod1 == "f":
         setpos(250,-100)
-    elif kód1 == "g":
+    elif kod1 == "g":
         setpos(50,-200)
-    elif kód1 == "h":
+    elif kod1 == "h":
         setpos(150,-200)
-    elif kód1 == "i":
+    elif kod1 == "i":
         setpos(250,-200)
                                         # Po výběru čtverce umístí kurzor (ocas želvy) do příslušného pole
     pendown()
@@ -62,29 +57,29 @@ for _ in range(4):
     penup()
                                         # Nakreslí kružnici do příslušného pole
     print("Hraje hráč 2")
-    kód2 = input("Zadej kód čtverce:")
+    kod2 = input("Zadej kód čtverce:")
 
-    while kód2 != "a" and kód2 != "b" and kód2 != "c" and kód2 != "d" and kód2 != "e" and kód2 != "f" and kód2 != "g" and kód2 != "h" and kód2 != "i":
+    while kod2 != "a" and kod2 != "b" and kod2 != "c" and kod2 != "d" and kod2 != "e" and kod2 != "f" and kod2 != "g" and kod2 != "h" and kod2 != "i":
         print("Musíš zadat platný kód čtverce, tedy a, b, c, d, e, f, g, h, nebo i")
-        kód2 = input("Zadej kód čtverce:")
+        kod2 = input("Zadej kód čtverce:")
                                         # Vylučuje nesprávný vstup od hráče 2
-    if kód2 == "a":
+    if kod2 == "a":
         setpos(50,0)
-    elif kód2 == "b":
+    elif kod2 == "b":
         setpos(150,0)
-    elif kód2 == "c":
+    elif kod2 == "c":
         setpos(250,0)
-    elif kód2 == "d":
+    elif kod2 == "d":
         setpos(50,-100)
-    elif kód2 == "e":
+    elif kod2 == "e":
         setpos(150,-100)
-    elif kód2 == "f":
+    elif kod2 == "f":
         setpos(250,-100)
-    elif kód2 == "g":
+    elif kod2 == "g":
         setpos(50,-200)
-    elif kód2 == "h":
+    elif kod2 == "h":
         setpos(150,-200)
-    elif kód2 == "i":
+    elif kod2 == "i":
         setpos(250,-200)
                                         # Po výběru čtverce umístí kurzor (ocas želvy) do příslušného pole
 
@@ -100,31 +95,32 @@ for _ in range(4):
     penup()
                                         # Nakreslí křížek do příslušného pole
 print("Hraje hráč 1")
-kód1 = input("Zadej kód čtverce:")
-while kód1 != "a" and kód1 != "b" and kód1 != "c" and kód1 != "d" and kód1 != "e" and kód1 != "f" and kód1 != "g" and kód1 != "h" and kód1 != "i":
+kod1 = input("Zadej kód čtverce:")
+while kod1 != "a" and kod1 != "b" and kod1 != "c" and kod1 != "d" and kod1 != "e" and kod1 != "f" and kod1 != "g" and kod1 != "h" and kod1 != "i":
     print("Musíš zadat platný kód čtverce, tedy a, b, c, d, e, f, g, h, nebo i")
-    kód1 = input("Zadej kód čtverce:")
+    kod1 = input("Zadej kód čtverce:")
 
-if kód1 == "a":
+if kod1 == "a":
     setpos(50,0)
-elif kód1 == "b":
+elif kod1 == "b":
     setpos(150,0)
-elif kód1 == "c":
+elif kod1 == "c":
     setpos(250,0)
-elif kód1 == "d":
+elif kod1 == "d":
     setpos(50,-100)
-elif kód1 == "e":
+elif kod1 == "e":
     setpos(150,-100)
-elif kód1 == "f":
+elif kod1 == "f":
     setpos(250,-100)
-elif kód1 == "g":
+elif kod1 == "g":
     setpos(50,-200)
-elif kód1 == "h":
+elif kod1 == "h":
     setpos(150,-200)
-elif kód1 == "i":
+elif kod1 == "i":
     setpos(250,-200)
-
+                                         # Celá procedura ještě jednou, aby to bylo 9x
 pendown()
 circle(50)
-penup()                                     # Celá procedura ještě jednou, aby to bylo 9x
+penup()                                     
 print("Konec hry!")
+exitonclick()
